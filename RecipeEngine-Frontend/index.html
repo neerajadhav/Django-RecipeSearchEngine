@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- main.css -->
+    <link rel="stylesheet" href="main.css">
+
+    <title>My Recipe Book</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="my-5 mx-auto" style="max-width: 700px;">
+            <center>
+                <img src="recipebook-logo.png" style="width: 300px;" alt="recipebook" class="img-fluid">
+                <form class="mt-5 mb-2" action="" method="get">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control search-bar shadow" placeholder="Pizza, Cake, Cheese...">
+                        <button type="submit" class="btn search-bar shadow">Search</button>
+                    </div>
+                </form>
+            </center>
+        </section>
+        <section class="my-5 mx-auto" style="max-width: 700px;">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="shadow result-card">
+                        <div class="card-body p-0 pb-3">
+                            <h5 class="card-title">Cake</h5>
+                            <p class="card-text">This is a cake recipe.</p> 
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
+                            alt="cake" class="img-fluid">
+                        <a class="btn p-0 my-3 dropdown-toggle" data-bs-toggle="collapse" href="#itemid"
+                            role="button">
+                            Ingredients
+                        </a>
+                        <div class="collapse" id="itemid">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
